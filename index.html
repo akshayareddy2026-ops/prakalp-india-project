@@ -2,11 +2,137 @@
 <html>
 <head>
     <title>Cultural Mosaic of India</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 20px;
+            transition: transform 0.5s, box-shadow 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .info {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card:hover .info {
+            opacity: 1;
+        }
+
+        .emoji {
+            font-size: 60px;
+            animation: float 2s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Welcome to Cultural Mosaic of India 🇮🇳</h1>
-<p>This website explores Indian culture across states and time periods.</p>
+<h1>🌏 Cultural Mosaic of India 🇮🇳</h1>
+<p>Hover over each state to explore language, dress, and food!</p>
+
+<div class="container">
+
+    <div class="card">
+        <div class="emoji">👗</div>
+        <h2>Andhra Pradesh</h2>
+        <div class="info">
+            <p><b>Language:</b> Telugu</p>
+            <p><b>Dress:</b> Saree, Pancha</p>
+            <p><b>Food:</b> Pulihora, Gongura</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🥻</div>
+        <h2>Tamil Nadu</h2>
+        <div class="info">
+            <p><b>Language:</b> Tamil</p>
+            <p><b>Dress:</b> Kanchipuram Saree, Veshti</p>
+            <p><b>Food:</b> Dosa, Sambar</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="emoji">👳‍♂️</div>
+        <h2>Punjab</h2>
+        <div class="info">
+            <p><b>Language:</b> Punjabi</p>
+            <p><b>Dress:</b> Salwar Kameez, Turban</p>
+            <p><b>Food:</b> Makki di Roti, Sarson da Saag</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="emoji">👘</div>
+        <h2>Rajasthan</h2>
+        <div class="info">
+            <p><b>Language:</b> Rajasthani</p>
+            <p><b>Dress:</b> Ghagra Choli, Dhoti</p>
+            <p><b>Food:</b> Dal Baati Churma</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🌴</div>
+        <h2>Kerala</h2>
+        <div class="info">
+            <p><b>Language:</b> Malayalam</p>
+            <p><b>Dress:</b> Kasavu Saree, Mundu</p>
+            <p><b>Food:</b> Appam, Kerala Sadya</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🐅</div>
+        <h2>West Bengal</h2>
+        <div class="info">
+            <p><b>Language:</b> Bengali</p>
+            <p><b>Dress:</b> Tant Saree, Dhoti</p>
+            <p><b>Food:</b> Rasgulla, Fish Curry</p>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
